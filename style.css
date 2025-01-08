@@ -132,13 +132,13 @@ button:focus {
     padding: 20px;
   }
   .headingtop{
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
   .para{
-    font-size: 1.1rem;
+    font-size: 7rem;
   }
   .container p{
-    padding: 0 8%;
+    padding: 0 4%;
   }
   
 }
