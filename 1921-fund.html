@@ -116,7 +116,17 @@
             text-shadow: 0 0 8px #fff, 0 0 10px #fff;
         }
 
-        /* Mobile View */
+        #toggler,
+        label {
+            display: none;
+            z-index: 1000;
+        }
+
+        label i {
+            color: rgb(8, 8, 8);
+            z-index: 1000;
+        }
+
         @media screen and (max-width: 900px) {
             .box .righttext {
                 padding: 0px 30px !important;
@@ -184,7 +194,8 @@
             <div class="left-column">
                 <div class="box">
                     <h3>Purpose</h3>
-                    <p class="alignlft">Serves as the financial engine for fostering community growth and resilience.</p>
+                    <p class="alignlft">Serves as the financial engine for fostering community growth and resilience.
+                    </p>
                 </div>
                 <div class="box">
                     <h3>Impact Goals</h3>
@@ -196,16 +207,18 @@
             <div class="right-column">
                 <div class="box">
                     <h3>What We Offer</h3>
-                    <p class="alignlft righttext">Community Development Grants: Funding for local infrastructure, health, and
+                    <p class="alignlft righttext">Community Development Grants: Funding for local infrastructure,
+                        health, and
                         social well-being projects.<br>
-                        Educational Scholarships: For future leaders in entrepreneurship, technology, and financial literacy.<br>
-                        Social Impact Investments: Financial support for ventures addressing challenges like housing, workforce
+                        Educational Scholarships: For future leaders in entrepreneurship, technology, and financial
+                        literacy.<br>
+                        Social Impact Investments: Financial support for ventures addressing challenges like housing,
+                        workforce
                         development, and sustainability.</p>
                 </div>
             </div>
         </div>
-       
+
     </div>
 </body>
-<script src="script.js"></script>
 </html>
