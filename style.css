@@ -398,13 +398,10 @@ label i {
 /* moving screen  */
 .wrapper {
   animation: scroll 100s linear infinite;
-  /* background: url("https://i.ytimg.com/vi/Q_4l6UH5B9o/maxresdefault.jpg"), */
   background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIjx0z-pPeB9py0whNBAzGDfU9ZLg6_mEG7w&s"),
     #0e0d0d;
   color: #eee;
   height: 100vh;
-  /* min-width: 360px; */
-  /* width: 100%; */
   justify-content: center;
   align-items: center;
   perspective: 1000px;
@@ -416,17 +413,9 @@ label i {
     background-position: 0px -400%;
   }
 }
-
-/* Fallback if the operatring system prefers reduced motion*/
 @media (prefers-reduced-motion) {
   .wrapper {
     animation: scroll 800s linear infinite;
-  }
-}
-
-@media (min-width: 670px) {
-  .title {
-    font-size: 5rem;
   }
 }
 /* moving screen  */
