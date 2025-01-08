@@ -50,6 +50,7 @@ nav a:hover {
   gap: 20px;
   text-align: center;
   justify-content: center;
+  padding-bottom: 30px !important;
 }
 button {
   border: 2px solid white;
@@ -130,6 +131,16 @@ button:focus {
     align-items: center;
     padding: 20px;
   }
+  .headingtop{
+    font-size: 1.4rem;
+  }
+  .para{
+    font-size: 1.1rem;
+  }
+  .container p{
+    padding: 0 8%;
+  }
+  
 }
 @media screen and (max-width: 600px) {
   .button-container {
