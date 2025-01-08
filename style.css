@@ -152,11 +152,11 @@ label i {
   }
 
   button {
-    width: calc(50% - 100px);
+    width: calc(50% - 40px);
   }
 
   button:nth-child(3) {
-    width: 70%;
+    width: 90%;
   }
   
 }
