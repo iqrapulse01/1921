@@ -77,33 +77,32 @@
         }
 
         @media screen and (max-width: 500px) {
-    .about-container {
-        flex-direction: column; /* Align cards vertically */
-        align-items: center; /* Center align the cards */
-        gap: 10px; /* Adjust spacing between cards */
-        margin: 20px 0; /* Add some margin for better layout */
-    }
+            .about-container {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                margin: 20px 0;
+            }
 
-    .about-box {
-        width: 80%; /* Adjust card width for small screens */
-        transform: rotateX(75deg) translateY(-200px) translateZ(-100px); /* Keep initial collapsed state */
-        transition: transform 0.6s, box-shadow 0.6s; /* Retain animation */
-    }
+            .about-box {
+                width: 80%;
+                transform: rotateX(75deg) translateY(-200px) translateZ(-100px);
+                transition: transform 0.6s, box-shadow 0.6s;
+            }
 
-    .about-box:hover {
-        transform: rotateX(0deg) translateY(0px) translateZ(0px); /* Expand card on hover/touch */
-        box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.5); /* Add hover shadow */
-    }
+            .about-box:hover {
+                transform: rotateX(0deg) translateY(0px) translateZ(0px);
+                box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.5);
+            }
 
-    .box-heading {
-        font-size: 1.2rem; /* Adjust heading size for smaller screens */
-    }
+            .box-heading {
+                font-size: 1.2rem;
+            }
 
-    .box-content {
-        font-size: 0.9rem; /* Adjust content font size */
-    }
-}
-
+            .box-content {
+                font-size: 0.9rem;
+            }
+        }
     </style>
 </head>
 
@@ -156,5 +155,5 @@
         </div>
     </div>
 </body>
-
+<script src="script.js"></script>
 </html>

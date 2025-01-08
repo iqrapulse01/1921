@@ -23,10 +23,12 @@ body {
   font-weight: 100;
   background: radial-gradient(#a23982, #1f1013);
   overflow-y: auto;
+  overflow-x: hidden;
   -webkit-animation: fadeIn 1 1s ease-out;
   -moz-animation: fadeIn 1 1s ease-out;
   -o-animation: fadeIn 1 1s ease-out;
   animation: fadeIn 1 1s ease-out;
+
 }
 
 .container {
@@ -110,6 +112,13 @@ button:focus {
   font-size: 1.7rem;
   margin-top: 150px;
 }
+.headingtop:hover{
+  text-shadow:
+  0 0 5px rgb(255, 255, 255, 1),
+  0 0 10px rgb(255, 255, 255, 1),
+  0 0 20px rgb(255, 255, 255, 1),
+  0 0 30px rgb(255, 255, 255, 1);
+}
 .para {
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -166,7 +175,7 @@ label i {
     padding: 0 4%;
   }
   .button-container {
-    padding-top: 40px !important;
+    padding-top: 30px !important;
     padding-bottom: 10px !important;
   }
 }
@@ -419,3 +428,45 @@ label i {
 
           animation-duration: 0.2s;
 }
+
+/* ball  */
+.ball {
+  position: absolute;
+  border-radius: 100%;
+  opacity: 0.7;
+}
+/* ball  */
+/* moving screen  */
+.wrapper {
+  animation: scroll 100s linear infinite;
+  background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80"),
+    #111111;
+  color: #eee;
+  height: 100vh;
+  min-width: 360px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+}
+
+@keyframes scroll {
+  100% {
+    background-position: 0px -400%;
+  }
+}
+
+/* Fallback if the operatring system prefers reduced motion*/
+@media (prefers-reduced-motion) {
+  .wrapper {
+    animation: scroll 800s linear infinite;
+  }
+}
+
+@media (min-width: 670px) {
+  .title {
+    font-size: 5rem;
+  }
+}
+/* moving screen  */
