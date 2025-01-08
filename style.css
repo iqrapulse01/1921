@@ -439,12 +439,12 @@ label i {
 /* moving screen  */
 .wrapper {
   animation: scroll 100s linear infinite;
-  background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80"),
+  background: url("https://videocdn.cdnpk.net/harmony/content/video/partners1757/thumbnails/h1ac969b3_cube-gold-pixle-background-2023-11-27-04-53-18-utc_small.jpg"),
     #111111;
   color: #eee;
-  height: 100vh;
-  min-width: 360px;
-  width: 100%;
+  height: 71vh;
+  /* min-width: 360px; */
+  /* width: 100%; */
   justify-content: center;
   align-items: center;
   perspective: 1000px;
