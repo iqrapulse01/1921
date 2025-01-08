@@ -388,47 +388,6 @@ label i {
 }
 /* bg animation  */
 
-.box1{
-	width: 300px; 
-	background-color: #DDFFF7;
-	position: relative;
-	box-shadow: 10px 10px 42px 0 rgba(0,0,0,0.75);
-}
-.box1:after, .box1:before{
-	mix-blend-mode:multiply;
-	filter:none;
-	z-index: -1;
-	content:'';
-	width:calc(100% + (50px * 1));
-	height:calc(100% + (50px * 1));
-	position: absolute;
-	display: block;
-	animation: border 10s ease-in-out infinite;
-	transform:translateX(-50px) translateY(-50px);
-}
-@keyframes border {
-  0%, 100% {
-    -webkit-clip-path: polygon(0 0, calc(100% - (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 100%, calc(0% + (33.3333333333px)) calc(100% - (33.3333333333px)));
-            clip-path: polygon(0 0, calc(100% - (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 100%, calc(0% + (33.3333333333px)) calc(100% - (33.3333333333px)));
-  }
-  50% {
-    -webkit-clip-path: polygon(calc(0% + (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 0, calc(100% - (33.3333333333px)) calc(100% - (33.3333333333px)), 0 100%);
-            clip-path: polygon(calc(0% + (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 0, calc(100% - (33.3333333333px)) calc(100% - (33.3333333333px)), 0 100%);
-  }
-}
-.box1:before {
-	background-color:#a23982;
-	  clip-path: polygon(calc(0% + (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 0, calc(100% - (33.3333333333px)) calc(100% - (33.3333333333px)), 0 100%);
-}
-
-.box1:hover:after{
-	animation-delay: -0.1s;
-}
-.box1:hover:before, .box1:hover:after {
-
-          animation-duration: 0.2s;
-}
-
 /* ball  */
 .ball {
   position: absolute;
@@ -439,8 +398,9 @@ label i {
 /* moving screen  */
 .wrapper {
   animation: scroll 100s linear infinite;
-  background: url("https://videocdn.cdnpk.net/harmony/content/video/partners1757/thumbnails/h1ac969b3_cube-gold-pixle-background-2023-11-27-04-53-18-utc_small.jpg"),
-    #111111;
+  /* background: url("https://i.ytimg.com/vi/Q_4l6UH5B9o/maxresdefault.jpg"), */
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIjx0z-pPeB9py0whNBAzGDfU9ZLg6_mEG7w&s"),
+    #0e0d0d;
   color: #eee;
   height: 71vh;
   /* min-width: 360px; */
