@@ -78,9 +78,9 @@ button {
   background: transparent;
   font-family: "Roboto", sans-serif;
   color: white;
-  width: 190px;
+  width: 160px;
   height: 45px;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 500;
   border-radius: 5px;
   opacity: 0.9;
@@ -103,9 +103,7 @@ button:focus {
 .container p {
   padding: 0 15%;
 }
-.topspc {
-  margin-top: 150px;
-}
+
 .headingtop {
   text-align: center;
   color: white;
