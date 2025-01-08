@@ -10,7 +10,7 @@ body {
   -o-animation: fadeIn 1 1s ease-out;
   animation: fadeIn 1 1s ease-out;
 }
-.container{
+.container {
   text-align: center;
   justify-content: center;
 }
@@ -50,6 +50,7 @@ nav a:hover {
   gap: 20px;
   text-align: center;
   justify-content: center;
+  padding-top: 40px !important;
   padding-bottom: 30px !important;
 }
 button {
@@ -77,9 +78,8 @@ button:hover {
 button:focus {
   outline: none;
 }
-.container p{
+.container p {
   padding: 0 15%;
-
 }
 .headingtop {
   text-align: center;
@@ -96,12 +96,13 @@ button:focus {
   color: white;
   font-size: 1.5rem;
 }
-#toggler, label{
+#toggler,
+label {
   display: none;
-  }
-  label i{
+}
+label i {
   color: white;
-  }
+}
 #footer {
   font-family: "Roboto", sans-serif;
   font-size: 1.2em;
@@ -131,16 +132,19 @@ button:focus {
     align-items: center;
     padding: 20px;
   }
-  .headingtop{
-    font-size: 1rem;
+  .headingtop {
+    font-size: 1.1rem;
   }
-  .para{
-    font-size: 0.7rem;
+  .para {
+    font-size: 0.9rem;
   }
-  .container p{
+  .container p {
     padding: 0 4%;
   }
-  
+  .button-container {
+    padding-top: 40px !important;
+    padding-bottom: 10px !important;
+  }
 }
 @media screen and (max-width: 600px) {
   .button-container {
@@ -148,12 +152,13 @@ button:focus {
   }
 
   button {
-    width: calc(50% - 10px);
+    width: calc(50% - 100px);
   }
 
   button:nth-child(3) {
-    width: 100%; 
+    width: 70%;
   }
+  
 }
 /* bg animation  */
 .light {
