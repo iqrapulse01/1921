@@ -7,17 +7,16 @@
     <link rel="stylesheet" href="style.css">
     <title>1921 BC</title>
     <style>
-        /* Custom styles for 1921 BC */
         body {
             font-family: sans-serif;
             margin: 0;
             padding: 0;
-            background: radial-gradient(#a23982, #1f1013);
+
         }
 
-        .container {
+        .container1 {
             text-align: center;
-            padding: 50px 6%;
+            padding: 20px 10% 0px 10%;
         }
 
         /* Main Heading */
@@ -25,8 +24,10 @@
             font-size: 2rem;
             font-weight: 800;
             color: white;
+            /* background: linear-gradient( rgba(1, 78, 1,0.5),#0a0a0a); */
             text-shadow: 0 0 5px white, 0 0 10px rgb(12, 12, 12);
             margin-bottom: 30px;
+            text-align: center;
         }
 
         /* Two columns layout */
@@ -53,14 +54,13 @@
         }
 
         .box {
-            background: rgba(0, 0, 0, 0.2);
+            background: linear-gradient(rgba(1, 78, 1, 0.5), #0a0a0a);
             padding: 20px 10px;
             border-radius: 5px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 10px 20px rgba(253, 252, 252, 0.2), 0 5px 15px rgba(252, 251, 251, 0.15);
             transition: all 0.3s ease;
         }
 
-        /* Heading in each box */
         .box h3 {
             font-size: 1.2rem;
             font-weight: 700;
@@ -69,7 +69,6 @@
             margin-bottom: 10px;
         }
 
-        /* Box Content */
         .box p {
             font-size: 1rem;
             color: #d8d8d8;
@@ -88,18 +87,16 @@
             line-height: 22px;
         }
 
-        /* Box Hover Effect */
         .box:hover {
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
         }
 
-        /* Button at the Bottom */
         .cta-button {
             width: 80%;
             padding: 10px 20%;
             font-size: 1.2rem;
             font-weight: 600;
-            background: linear-gradient(#808080, #3fada8);
+            background: linear-gradient(#808080, rgb(1, 78, 1));
             color: rgb(252, 249, 249);
             border: none;
             border-radius: 5px;
@@ -112,9 +109,9 @@
 
         .cta-button:hover {
             cursor: pointer;
-            color: #01373b;
+            color: rgb(1, 78, 1);
             font-weight: 800;
-            background: #237070;
+            background: linear-gradient(rgb(1, 78, 1), #808080);
             opacity: 1;
             text-shadow: 0 0 8px #fff, 0 0 10px #fff;
         }
@@ -164,6 +161,7 @@
 </head>
 
 <body>
+    <div class="wrapper">
         <!-- header  -->
         <nav>
             <a href="/index.html"><img src="images/Final 1921 Ventures.png" width="90px" alt=""></a>
@@ -173,48 +171,52 @@
             <input type="checkbox" id="toggler" name="">
             <div class="menu">
                 <ul class="list">
-                    <li><a href="/1921-project.html" >1921-About</a></li>
-                    <li><a href="/1921-BC.html" >1921-BC</a></li>
-                    <li><a href="/1921-fund.html" > 1921-Fund</a></li>
-                    <li><a href="/join-us.html" >Join Us</a></li>
+                    <li><a href="/1921-project.html"> About The 1921</a></li>
+                    <li><a href="/1921-BC.html">Explore 1921 BC</a></li>
+                    <li><a href="/1921-fund.html"> Explore The 1921 Fund</a></li>
+                    <li><a href="/join-us.html">Join Us</a></li>
                 </ul>
             </div>
         </nav>
         <!-- header  -->
-    <div class="container">
-        <div class="main-heading">1921 BC (Business Cultivator)</div>
-        <div class="content-wrapper">
-            <!-- Left Column -->
-            <div class="left-column">
-                <div class="box ">
-                    <h3>Purpose</h3>
-                    <p class="alignlft">A business incubator and accelerator providing structured programs, mentorship,
-                        and resources to help entrepreneurs build thriving businesses.</p>
+        <div class="container1">
+            <div class="main-heading">1921 BC (Business Cultivator)</div>
+            <div class="content-wrapper">
+                <!-- Left Column -->
+                <div class="left-column">
+                    <div class="box ">
+                        <h3>Purpose</h3>
+                        <p class="alignlft">A business incubator and accelerator providing structured programs,
+                            mentorship,
+                            and resources to help entrepreneurs build thriving businesses.</p>
+                    </div>
+                    <div class="box">
+                        <h3>Impact Goals</h3>
+                        <p>Support 500+ businesses by 2030.</p>
+                    </div>
                 </div>
-                <div class="box">
-                    <h3>Impact Goals</h3>
-                    <p>Support 500+ businesses by 2030.</p>
-                </div>
-            </div>
 
-            <!-- Right Column -->
-            <div class="right-column">
-                <div class="box">
-                    <h3>What We Offer</h3>
-                    <p class="alignlft righttext">Startup Incubation: Support for ideation, prototyping, and market
-                        validation.<br>
-                        Business Accelerator: Resources for scaling startups, funding opportunities, and growth
-                        strategies.<br>
-                        Workshops and Training: Courses on business planning, financial literacy, digital marketing, and
-                        leadership.<br>
-                        Community Engagement: Collaboration opportunities with mentors and investors.</p>
+                <!-- Right Column -->
+                <div class="right-column">
+                    <div class="box">
+                        <h3>What We Offer</h3>
+                        <p class="alignlft righttext">Startup Incubation: Support for ideation, prototyping, and market
+                            validation.<br>
+                            Business Accelerator: Resources for scaling startups, funding opportunities, and growth
+                            strategies.<br>
+                            Workshops and Training: Courses on business planning, financial literacy, digital marketing,
+                            and
+                            leadership.<br>
+                            Community Engagement: Collaboration opportunities with mentors and investors.</p>
+                    </div>
                 </div>
             </div>
+            <a href="https://1921bc.com/" target="_blank">
+                <button class="cta-button">Learn More About 1921 BC</button>
+            </a>
+
         </div>
-       <a href="https://1921bc.com/" target="_blank">
-        <button  class="cta-button">Learn More About 1921 BC</button>
-       </a>
-       
     </div>
 </body>
+
 </html>

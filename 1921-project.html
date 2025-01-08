@@ -19,7 +19,7 @@
             margin: 0;
             font-family: "Roboto", sans-serif;
             color: white;
-            background: radial-gradient(#a23982, #1f1013);
+            background: radial-gradient(#070707, #1f1013);
         }
 
         h1 {
@@ -41,19 +41,17 @@
             text-align: center;
             position: relative;
             width: 280px;
-            height: 250px;
-            background: linear-gradient(#808080, #3fada8);
+            height: 300px;
+            background: linear-gradient(#808080, rgb(1, 78, 1));
             margin: 20px;
             padding: 20px;
             transition: 0.6s;
-            transform: rotatex(75deg) translateY(-200px) translateZ(-100px);
             box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.5);
         }
 
         .about-box:hover {
-            transform: rotatex(0deg);
-            transition: 0.6s;
-            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(rgb(1, 78, 1), #808080);
+            box-shadow: 0px 10px 5px rgba(231, 229, 229, 0.5);
         }
 
         .box-heading {
@@ -76,23 +74,13 @@
             line-height: 25px;
         }
 
-        @media screen and (max-width: 500px) {
-            .about-container {
-                flex-direction: column;
-                align-items: center;
-                gap: 10px;
-                margin: 20px 0;
-            }
-
+        @media screen and (max-width: 600px) {
             .about-box {
-                width: 80%;
-                transform: rotateX(75deg) translateY(-200px) translateZ(-100px);
-                transition: transform 0.6s, box-shadow 0.6s;
+                height: 250px;
             }
 
-            .about-box:hover {
-                transform: rotateX(0deg) translateY(0px) translateZ(0px);
-                box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.5);
+            .aboutheading {
+                font-size: 1.7rem;
             }
 
             .box-heading {
@@ -115,32 +103,35 @@
         <input type="checkbox" id="toggler">
         <div class="menu">
             <ul class="list">
-                <li><a href="/1921-project.html">1921-About</a></li>
-                <li><a href="/1921-BC.html">1921-BC</a></li>
-                <li><a href="/1921-fund.html">1921-Fund</a></li>
+                <li><a href="/1921-project.html"> About The 1921</a></li>
+                <li><a href="/1921-BC.html">Explore 1921 BC</a></li>
+                <li><a href="/1921-fund.html"> Explore The 1921 Fund</a></li>
                 <li><a href="/join-us.html">Join Us</a></li>
             </ul>
         </div>
     </nav>
 
-    <h1>About The 1921 Project</h1>
+    <h1 class="aboutheading">About The 1921 Project</h1>
 
     <div class="about-container">
         <div class="about-box">
 
-            <h3 class="box-heading">Introduction</h3>
+            <h3 class="box-heading">Our Vision</h3>
             <div class="box-content alignleft">
-                The 1921 Project is an ambitious initiative of the Urban Entrepreneurs Institute (UEI) and the
-                brainchild of the business development think tank Business Minds Working (BMW).
+                <b>Economic Empowerment:</b> Provide resources and funding to entrepreneurs and communities. <br>
+                <b>Sustainable Growth:</b> Foster ventures that drive long-term social and economic impact. <br>
+                <b>Honoring Resilience:</b> Celebrating the legacy of Tulsa Oklahoma's Black Wall Street.
             </div>
         </div>
 
         <div class="about-box">
 
-            <h3 class="box-heading">Purpose</h3>
+            <h3 class="box-heading">What We Offer</h3>
             <div class="box-content alignleft">
-                Inspired by the resilience of Black Wall Street, it is dedicated to building a billion-dollar ecosystem
-                that empowers entrepreneurs and revitalizes communities.
+                <b>Startup Incubation:</b> Support for ideation, prototyping, and market validation. <br>
+                <b>Business Accelerator:</b> Resources focused on scaling high-potential startups. <br>
+                <b>Workshops and Training:</b> Courses on business planning, digital marketing, and leadership. <br>
+                <b>Community Engagement:</b> Collaboration with peers, mentors, and investors.
             </div>
         </div>
 
@@ -148,9 +139,9 @@
 
             <h3 class="box-heading">Impact Goals</h3>
             <div class="box-content">
-                <p>Empower 1,000+ entrepreneurs by 2030.</p>
-                <p>Generate $1B+ in economic impact through business development and community investment.</p>
-                <p>Create sustainable ecosystems that inspire innovation and resilience.</p>
+                <p> Launch and support 500+ businesses by 2030.</p>
+                <p>Build a pipeline of sustainable enterprises that create jobs, drive economic growth, and address
+                    community needs.</p>
             </div>
         </div>
     </div>
