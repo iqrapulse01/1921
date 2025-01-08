@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+    <title>About The 1921 Project</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Exo:700');
+        @import url('https://fonts.googleapis.com/css?family=Abel');
+
+        body {
+            margin: 0;
+            font-family: "Roboto", sans-serif;
+            color: white;
+            background: radial-gradient(#a23982, #1f1013);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 800;
+            text-shadow: 0 0 5px rgb(37, 37, 37), 0 0 10px white;
+            margin-top: 60px;
+        }
+
+        .about-container {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            margin: 0px 10px;
+        }
+
+        .about-box {
+            text-align: center;
+            position: relative;
+            width: 280px;
+            height: 250px;
+            background: linear-gradient(#808080, #3fada8);
+            margin: 20px;
+            padding: 20px;
+            transition: 0.6s;
+            transform: rotatex(75deg) translateY(-200px) translateZ(-100px);
+            box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        .about-box:hover {
+            transform: rotatex(0deg);
+            transition: 0.6s;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .box-heading {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+            margin: 15px 0;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        .box-content {
+            font-size: 1rem;
+            font-family: 'Abel', sans-serif;
+            color: white;
+            margin: 0 10px;
+            text-align: left;
+        }
+
+        .alignleft {
+            line-height: 25px;
+        }
+
+        @media screen and (max-width: 500px) {
+    .about-container {
+        flex-direction: column; /* Align cards vertically */
+        align-items: center; /* Center align the cards */
+        gap: 10px; /* Adjust spacing between cards */
+        margin: 20px 0; /* Add some margin for better layout */
+    }
+
+    .about-box {
+        width: 80%; /* Adjust card width for small screens */
+        transform: rotateX(75deg) translateY(-200px) translateZ(-100px); /* Keep initial collapsed state */
+        transition: transform 0.6s, box-shadow 0.6s; /* Retain animation */
+    }
+
+    .about-box:hover {
+        transform: rotateX(0deg) translateY(0px) translateZ(0px); /* Expand card on hover/touch */
+        box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.5); /* Add hover shadow */
+    }
+
+    .box-heading {
+        font-size: 1.2rem; /* Adjust heading size for smaller screens */
+    }
+
+    .box-content {
+        font-size: 0.9rem; /* Adjust content font size */
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="/index.html"><img src="images/Final 1921 Ventures.png" width="90px" alt=""></a>
+        <label for="toggler">
+            <i class="fa fa-bars"></i>
+        </label>
+        <input type="checkbox" id="toggler">
+        <div class="menu">
+            <ul class="list">
+                <li><a href="/1921-project.html">1921-About</a></li>
+                <li><a href="/1921-BC.html">1921-BC</a></li>
+                <li><a href="/1921-fund.html">1921-Fund</a></li>
+                <li><a href="/join-us.html">Join Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <h1>About The 1921 Project</h1>
+
+    <div class="about-container">
+        <div class="about-box">
+
+            <h3 class="box-heading">Introduction</h3>
+            <div class="box-content alignleft">
+                The 1921 Project is an ambitious initiative of the Urban Entrepreneurs Institute (UEI) and the
+                brainchild of the business development think tank Business Minds Working (BMW).
+            </div>
+        </div>
+
+        <div class="about-box">
+
+            <h3 class="box-heading">Purpose</h3>
+            <div class="box-content alignleft">
+                Inspired by the resilience of Black Wall Street, it is dedicated to building a billion-dollar ecosystem
+                that empowers entrepreneurs and revitalizes communities.
+            </div>
+        </div>
+
+        <div class="about-box">
+
+            <h3 class="box-heading">Impact Goals</h3>
+            <div class="box-content">
+                <p>Empower 1,000+ entrepreneurs by 2030.</p>
+                <p>Generate $1B+ in economic impact through business development and community investment.</p>
+                <p>Create sustainable ecosystems that inspire innovation and resilience.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

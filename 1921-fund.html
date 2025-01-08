@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>1921 BC</title>
+    <style>
+        /* Custom styles for 1921 BC */
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(#a23982, #1f1013);
+        }
+
+        .container {
+            text-align: center;
+            padding: 50px 6%;
+        }
+
+        /* Main Heading */
+        .main-heading {
+            font-size: 2rem;
+            font-weight: 800;
+            color: white;
+            text-shadow: 0 0 5px white, 0 0 10px rgb(12, 12, 12);
+            margin-bottom: 30px;
+        }
+
+        /* Two columns layout */
+        .content-wrapper {
+            display: flex;
+            justify-content: space-between;
+            gap: 0px;
+            flex-wrap: wrap;
+        }
+
+        .left-column {
+            width: 48%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .right-column {
+            width: 48%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .box {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 20px 10px;
+            border-radius: 5px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
+        }
+
+        /* Heading in each box */
+        .box h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #fcf7f7;
+            text-shadow: 0 0 3px rgba(248, 247, 247, 0.6);
+            margin-bottom: 10px;
+        }
+
+        /* Box Content */
+        .box p {
+            font-size: 1rem;
+            color: #d8d8d8;
+            list-style: none;
+        }
+
+        .box .alignlft {
+            text-align: left;
+            padding: 0px 10px !important;
+            line-height: 20px;
+        }
+
+        .box .righttext {
+            padding: 0px 35px !important;
+            line-height: 22px;
+        }
+
+        /* Box Hover Effect */
+        .box:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Button at the Bottom */
+        .cta-button {
+            width: 80%;
+            padding: 10px 20%;
+            font-size: 1.2rem;
+            font-weight: 600;
+            background: linear-gradient(#808080, #3fada8);
+            color: rgb(252, 249, 249);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 40px;
+            margin-bottom: 10px;
+            transition: background-color 0.3s;
+            text-shadow: 2px 4px 5px rgb(0, 0, 0);
+        }
+
+        .cta-button:hover {
+            cursor: pointer;
+            color: #01373b;
+            font-weight: 800;
+            background: #237070;
+            opacity: 1;
+            text-shadow: 0 0 8px #fff, 0 0 10px #fff;
+        }
+
+        /* Mobile View */
+        @media screen and (max-width: 900px) {
+            .box .righttext {
+                padding: 0px 30px !important;
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+            .box .righttext {
+                padding: 0px 15px !important;
+            }
+
+            .box .alignlft {
+                text-align: left;
+                padding: 0px 10px !important;
+                line-height: 18px;
+                font-size: 15px;
+            }
+        }
+
+        @media screen and (max-width: 550px) {
+            .content-wrapper {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .left-column,
+            .right-column {
+                width: 100%;
+            }
+
+            .main-heading {
+                font-size: 1.5rem;
+            }
+
+            .cta-button {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header  -->
+    <nav>
+        <a href="/index.html"><img src="images/Final 1921 Ventures.png" width="90px" alt=""></a>
+        <label for="toggler">
+            <i class="fa fa-bars"></i>
+        </label>
+        <input type="checkbox" id="toggler" name="">
+        <div class="menu">
+            <ul class="list">
+                <li><a href="/1921-project.html" >1921-About</a></li>
+                <li><a href="/1921-BC.html" >1921-BC</a></li>
+                <li><a href="/1921-fund.html" > 1921-Fund</a></li>
+                <li><a href="/join-us.html" >Join Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- header  -->
+    <!-- 1921 Fund Section -->
+    <div class="container">
+        <div class="main-heading">The 1921 Fund</div>
+        <div class="content-wrapper">
+            <!-- Left Column -->
+            <div class="left-column">
+                <div class="box">
+                    <h3>Purpose</h3>
+                    <p class="alignlft">Serves as the financial engine for fostering community growth and resilience.</p>
+                </div>
+                <div class="box">
+                    <h3>Impact Goals</h3>
+                    <p>Develop a $100M fund. Disburse millions annually to transformative community projects.</p>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="right-column">
+                <div class="box">
+                    <h3>What We Offer</h3>
+                    <p class="alignlft righttext">Community Development Grants: Funding for local infrastructure, health, and
+                        social well-being projects.<br>
+                        Educational Scholarships: For future leaders in entrepreneurship, technology, and financial literacy.<br>
+                        Social Impact Investments: Financial support for ventures addressing challenges like housing, workforce
+                        development, and sustainability.</p>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+</body>
+
+</html>
