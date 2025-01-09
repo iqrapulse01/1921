@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <title>1921 BC</title>
+    <title>1921 Fund</title>
     <style>
         body {
             font-family: sans-serif;
@@ -79,6 +82,7 @@
             text-shadow: 0 0 3px white, 0 0 5px rgb(12, 12, 12);
         }
 
+        /* Responsive Styles */
         @media screen and (max-width: 768px) {
             .content-wrapper {
                 flex-direction: column;
@@ -86,6 +90,23 @@
 
             .column {
                 flex: 1 1 100%;
+            }
+
+            /* Rearrange Order for Small Screens */
+            .box:nth-child(1) {
+                order: 1; /* About Us */
+            }
+
+            .box:nth-child(3) {
+                order: 2; /* Our Vision */
+            }
+
+            .box:nth-child(4) {
+                order: 3; /* What We Offer */
+            }
+
+            .box:nth-child(2) {
+                order: 4; /* Impact Goals */
             }
         }
     </style>
@@ -100,10 +121,10 @@
         <input type="checkbox" id="toggler">
         <div class="menu">
             <ul class="list">
-                <li><a href="/1921-project.html" > About The 1921</a></li>
-                <li><a href="/1921-BC.html" >Explore 1921 BC</a></li>
-                <li><a href="/1921-fund.html" > Explore The 1921 Fund</a></li>
-                <li><a href="/join-us.html" >Join Us</a></li>
+                <li><a href="/1921-project.html"> About The 1921</a></li>
+                <li><a href="/1921-BC.html">Explore 1921 BC</a></li>
+                <li><a href="/1921-fund.html"> Explore The 1921 Fund</a></li>
+                <li><a href="/join-us.html">Join Us</a></li>
             </ul>
         </div>
     </nav>
@@ -116,7 +137,6 @@
                 <div class="box">
                     <h3>About Us</h3>
                     <p style="padding-bottom: 30px;">
-
                         <span class="offering-title">Community Development Grants:</span><br> Funding for local
                         infrastructure, health, and social well-being projects.
                         <br>
@@ -157,7 +177,6 @@
                         development, and sustainability.
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
