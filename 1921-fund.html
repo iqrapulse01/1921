@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>1921 Fund</title>
     <style>
@@ -51,7 +51,6 @@
             border-radius: 8px;
             box-shadow: 0 0px 20px rgba(253, 252, 252, 0.2), 0 5px 10px rgba(252, 251, 251, 0.15);
             transition: transform 0.3s ease;
-            padding: 10px;
         }
 
         .box h3 {
@@ -81,6 +80,15 @@
             color: rgb(1, 78, 1);
             text-shadow: 0 0 3px white, 0 0 5px rgb(12, 12, 12);
         }
+       
+        .box-image {
+            width: 100%;
+            height: 170px;
+            margin: 0px;
+            object-fit: cover;
+            border-radius: 8px 8px 0 0;
+            object-position: 50% 32%;
+        }
 
         /* Responsive Styles */
         @media screen and (max-width: 768px) {
@@ -94,19 +102,23 @@
 
             /* Rearrange Order for Small Screens */
             .box:nth-child(1) {
-                order: 1; /* About Us */
+                order: 1;
+                /* About Us */
             }
 
             .box:nth-child(3) {
-                order: 2; /* Our Vision */
+                order: 2;
+                /* Our Vision */
             }
 
             .box:nth-child(4) {
-                order: 3; /* What We Offer */
+                order: 3;
+                /* What We Offer */
             }
 
             .box:nth-child(2) {
-                order: 4; /* Impact Goals */
+                order: 4;
+                /* Impact Goals */
             }
         }
     </style>
@@ -134,7 +146,12 @@
         <div class="content-wrapper">
             <!-- Left Column -->
             <div class="column">
+                
                 <div class="box">
+                    <div class="img">
+                        <img src="images/imagesfor1921fundtab/envato-labs-ai-59443cda-c51b-49c7-8af7-e2771e9694e8.jpg"
+                        alt="impact goal" class="box-image">
+                    </div>
                     <h3>About Us</h3>
                     <p style="padding-bottom: 30px;">
                         <span class="offering-title">Community Development Grants:</span><br> Funding for local
@@ -144,9 +161,12 @@
                 </div>
 
                 <div class="box">
+                    <img src="images/imagesfor1921fundtab/envato-labs-ai-015e6e05-9e64-472f-ac5d-3c850b95aa3d.jpg"
+                    alt="About Us" class="box-image">
                     <h3>Impact Goals</h3>
                     <p style="padding-bottom: 30px;">
-                        Launch and support <b>500+</b> businesses by <b>2030</b>, building a pipeline of sustainable enterprises that
+                        Launch and support <b>500+</b> businesses by <b>2030</b>, building a pipeline of sustainable
+                        enterprises that
                         create jobs, drive economic growth, and address community needs.
                         <br>
                     </p>
@@ -156,12 +176,16 @@
             <!-- Right Column -->
             <div class="column">
                 <div class="box">
+                    <img src="images/imagesfor1921fundtab/envato-labs-ai-d1efe6a8-9059-4d6f-9480-19d75d8d6861.jpg"
+                    alt="impact goal" class="box-image">
                     <h3>Our Vision</h3>
                     <p>
                         Economic empowerment through innovative funding solutions for sustainable community development.
                     </p>
                 </div>
                 <div class="box">
+                    <img src="images/imagesfor1921fundtab//envato-labs-ai-62de2049-2643-4241-aa30-b61b57f89c6c.jpg" style="object-position: 50% 50%;"
+                    alt="impact goal" class="box-image">
                     <h3>What We Offer</h3>
                     <div class="offering">
                         <span class="offering-title">Community Development Grants:</span> <br>
