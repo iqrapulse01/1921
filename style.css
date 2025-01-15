@@ -33,7 +33,8 @@ body {
 .container {
   text-align: center;
   justify-content: center;
-  background-image: url("images/herearesomepossiblebackgrounds/88d6ab5e-0de3-4a35-80e8-122195f304c1.jpg");
+  /* background-image: url("images/herearesomepossiblebackgrounds/88d6ab5e-0de3-4a35-80e8-122195f304c1.jpg"); */
+  background: #000;
 }
 
 /* nav */
@@ -390,7 +391,7 @@ label i {
 /* moving screen  */
 .wrapper {
   animation: scroll 100s linear infinite;
-  background: url("images/herearesomepossiblebackgrounds/88d6ab5e-0de3-4a35-80e8-122195f304c1.jpg"),
+  background: url("images/herearesomepossiblebackgrounds/ebd8f14c-ac7b-499f-97c3-9cff71640364.jpg"),
     #0e0d0d;
   color: #eee;
   height: 100vh !important;
